@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <a href="http://file:///G:/AMGOI/web%20development/food%20delivery/MD%20Foods/index.html"></a>
+    <a href="file:///G:/AMGOI/web%20development/food%20delivery/MD%20Foods/index.html"></a>
+    <link rel="stylesheet" href="css/payment.css">
+    <title>Account Details</title>
+</head>
+<style>
+    .payment-form{
+	padding-bottom: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.payment-form.dark{
+	background-color: #f6f6f6;
+}
+
+.payment-form .content{
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+	background-color: white;
+}
+
+.payment-form .block-heading{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.payment-form .block-heading p{
+	text-align: center;
+	max-width: 420px;
+	margin-bottom: auto;
+  margin-top: 1px;
+	opacity:0.7;
+}
+
+.payment-form.dark .block-heading p{
+	opacity:0.8;
+}
+
+.payment-form .block-heading h1,
+.payment-form .block-heading h2,
+.payment-form .block-heading h3{
+	margin-bottom:1.2rem;
+	color: #3b99e0;
+}
+.payment-form .block-heading p {
+  color: #025594;
+}
+
+.payment-form form{
+	border-top: 2px solid #5ea4f3;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+	background-color: #ffffff;
+	padding: 0;
+	max-width: 600px;
+	margin: auto;
+}
+
+.payment-form .title{
+	font-size: 1em;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-bottom: 0.8em;
+	font-weight: 600;
+	padding-bottom: 8px;
+}
+
+.payment-form .products{
+	background-color: #f7fbff;
+    padding: 25px;
+}
+
+.payment-form .products .item{
+	margin-bottom:1em;
+}
+
+.payment-form .products .item-name{
+	font-weight:600;
+	font-size: 0.9em;
+}
+
+.payment-form .products .item-description{
+	font-size:0.8em;
+	opacity:0.6;
+}
+
+.payment-form .products .item p{
+	margin-bottom:0.2em;
+}
+
+.payment-form .products .price{
+	float: right;
+	font-weight: 600;
+	font-size: 0.9em;
+}
+
+.payment-form .products .total{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 10px;
+	padding-top: 19px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.payment-form .card-details{
+	padding: 25px 25px 15px;
+}
+
+.payment-form .card-details label{
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: #79818a;
+	text-transform: uppercase;
+}
+
+.payment-form .card-details button{
+	margin-top: 0.6em;
+	padding:12px 0;
+	font-weight: 600;
+}
+
+.payment-form .date-separator{
+ 	margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+@media (min-width: 576px) {
+	.payment-form .title {
+		font-size: 1.2em; 
+	}
+
+	.payment-form .products {
+		padding: 40px; 
+  	}
+
+	.payment-form .products .item-name {
+		font-size: 1em; 
+	}
+
+	.payment-form .products .price {
+    	font-size: 1em; 
+	}
+
+  	.payment-form .card-details {
+    	padding: 40px 40px 30px; 
+    }
+
+  	.payment-form .card-details button {
+    	margin-top: 2em; 
+    } 
+}
+
+#gender{
+    margin-left: 60px;
+}
+
+
+th, td {
+      table-layout:auto;
+      width: 20%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align:unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      .first-col {
+      width: 30%;
+      text-align: left;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      }
+
+      @media (min-width: 568px) {
+      .name {
+      display: flex;
+      justify-content: space-between;
+      }
+      .name input {
+      width: 47%;
+      margin-bottom: 0;
+      }
+      th, td {
+      word-break: keep-all;
+      }
+      }
+
+      #table{
+        margin: 10px;
+        table-layout: fixed;
+         text-align: center;
+      }
+
+    .href{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #111111;
+    text-align:right;
+  }
+  
+  a:link {color: lightblue;}  
+  a:visited {color: #05c2fc}  
+  a:hover {color: #ff004c}  
+  a:active {color: #C0F0FC}  
+
+</style>
+<body>
+    <main class="page payment-page">
+        <section class="payment-form dark">
+          <div class="container">
+            <div class="block-heading">
+              <h1>FEEDBACK</h1>
+              <p>MD Food and Restaurant</p>
+            </div>
+            <form>
+                <div class="card-details">
+                  <div class="href">        
+                    <p>Back to home <a href="file:///G:/AMGOI/web%20development/food%20delivery/MD%20Foods/index.html">Home</a></p>
+                  </div> 
+                    <h3 class="title"><center>Please help us improve our restaurant services by filling in our feedback form. Thank you!</center></h3>
+                    <div class="row">
+                      <div class="form-group col-sm-7">
+                        <label for="card-holder">Enter Full Name</label>
+                        <input id="card-holder" type="text" class="form-control" placeholder="Full-Name" aria-label="Name" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label for="card-holder">Email Address</label>
+                        <input id="card-holder" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label for="">Visited Date</label>
+                        <div class="input-group expiration-date">
+                          <input type="text" class="form-control" placeholder="DD" aria-label="DD" aria-describedby="basic-addon1">
+                          <span class="date-separator">/</span>
+                          <input type="text" class="form-control" placeholder="MM" aria-label="MM" aria-describedby="basic-addon1">
+                          <span class="date-separator">/</span>
+                          <input type="text" class="form-control" placeholder="YY" aria-label="YY" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-7">
+                        <label for="card-holder">Enter Mobile Number</label>
+                        <input id="card-holder" type="text" class="form-control" placeholder="Mobile Number" aria-label="Mobile" aria-describedby="basic-addon1" size="10">
+                      </div>
+                      <div class="form-group col-sm-7">
+                        <label for="card-holder">Enter Age</label>
+                        <input id="card-holder" type="text" class="form-control" placeholder="Age" aria-label="pin" aria-describedby="basic-addon1" size="10">
+                      </div>
+                      
+                      <div class="form-group col-sm-6">
+                      <label for="card-holder">Gender</label><br>
+                    <input id="gender" type="radio" value="Male" name="gender" checked > Male   <br>
+                    <input id="gender" type="radio" value="Female" name="gender"> Female   <br>
+                    <input id="gender" type="radio" value="Other" name="gender"> Other  <label>   
+                    </div> 
+                    <div class="form-group col-sm-6">
+                        <label for="card-holder">Dine In / Take Out</label><br>
+                      <input id="gender" type="radio" value="Single" name="gender" checked > Dine In  <br>
+                      <input id="gender" type="radio" value="Married" name="gender"> Take Out   <br>  
+                      </div> 
+                      <div class="form-group col-sm-12">
+                        <label for="card-holder">Enter Full Address</label>
+                        <input id="card-holder" type="text" class="form-control" placeholder="Full-Address" aria-label="Address" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="form-group col-sm-7">
+                        <label for="card-holder">Enter Pin Code</label>
+                        <input id="card-holder" type="text" class="form-control" placeholder="Pin Code" aria-label="pin" aria-describedby="basic-addon1" size="10">
+                      </div>
+                  <div class="form-group col-sm-12">
+                    <label for="card-holder">REVIEW</label>
+                <table>
+                  <tr id="table">
+                    <th class="first-col"></th>
+                    <th>Amazing</th>
+                    <th>Good</th>
+                    <th>Decent</th>
+                    <th>Disappointing</th>
+                  </tr>
+                  <tr>
+                    <td class="first-col">Food Quality</td>
+                    <td><input type="radio" value="none" name="Food" /></td>
+                    <td><input type="radio" value="none" name="Food" /></td>
+                    <td><input type="radio" value="none" name="Food" /></td>
+                    <td><input type="radio" value="none" name="Food" /></td>
+                  </tr>
+                  <tr>
+                    <td class="first-col">Overall Service Quality</td>
+                    <td><input type="radio" value="none" name="Service" /></td>
+                    <td><input type="radio" value="none" name="Service" /></td>
+                    <td><input type="radio" value="none" name="Service" /></td>
+                    <td><input type="radio" value="none" name="Service" /></td>
+                  </tr>
+                  <tr>
+                    <td class="first-col">Speed of Service</td>
+                    <td><input type="radio" value="none" name="Speed" /></td>
+                    <td><input type="radio" value="none" name="Speed" /></td>
+                    <td><input type="radio" value="none" name="Speed" /></td>
+                    <td><input type="radio" value="none" name="Speed" /></td>
+                  </tr>
+                  <tr>
+                    <td class="first-col">Price</td>
+                    <td><input type="radio" value="none" name="Price" /></td>
+                    <td><input type="radio" value="none" name="Price" /></td>
+                    <td><input type="radio" value="none" name="Price" /></td>
+                    <td><input type="radio" value="none" name="Price" /></td>
+                  </tr>
+                  <tr>
+                    <td class="first-col">Overall Experience</td>
+                    <td><input type="radio" value="none" name="Experience" /></td>
+                    <td><input type="radio" value="none" name="Experience" /></td>
+                    <td><input type="radio" value="none" name="Experience" /></td>
+                    <td><input type="radio" value="none" name="Experience" /></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="form-group col-sm-12">
+                <label for="card-holder">Any comments, questions or suggestions?</label>
+                <textarea rows="5"></textarea>
+              </div>
+                      <div class="form-group col-sm-12">
+                        <button type="button" class="btn btn-primary btn-block">Submit</button>
+                      </div>
+                    
+                  
+            </form>
+          </div>
+        </section>
+      </main>
+</body>
+</html>
